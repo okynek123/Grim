@@ -1,13 +1,15 @@
 package me.tecnio.ahm.check.impl.aim;
 
-import me.tecnio.ahm.check.Check;
-import me.tecnio.ahm.check.api.annotations.CheckManifest;
-import me.tecnio.ahm.check.type.RotationCheck;
-import me.tecnio.ahm.data.PlayerData;
-import me.tecnio.ahm.exempt.ExemptType;
-import me.tecnio.ahm.update.RotationUpdate;
+import ac.grim.grimac.checks.Check;
+import ac.grim.grimac.checks.CheckData;
+import ac.grim.grimac.checks.type.RotationCheck;
+import ac.grim.grimac.player.GrimPlayer;
+import ac.grim.grimac.utils.anticheat.update.RotationUpdate;
 
-@CheckManifest(name = "Aim", type = "A", description = "Detects rotations with rounding flaws.")
+/**
+ * Check to detect rotations without a rotation constant.
+ */
+@CheckData(name = "AimA", stableKey = "grim.aim.aim_a")
 public final class AimA extends Check implements RotationCheck {
 
     public AimA(final PlayerData data) {

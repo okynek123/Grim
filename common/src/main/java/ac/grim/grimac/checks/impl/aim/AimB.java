@@ -10,7 +10,7 @@ import me.tecnio.ahm.update.RotationUpdate;
 /**
  * Check to detect rotations without a rotation constant.
  */
-@CheckManifest(name = "Aim", type = "B", description = "Detects rotations without a constant.")
+@CheckManifest(name = "AimB", stableKey = "grim.aim.aim_b")
 public final class AimB extends Check implements RotationCheck {
 
     public AimB(final PlayerData data) {

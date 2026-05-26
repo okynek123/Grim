@@ -9,7 +9,7 @@ import ac.grim.grimac.utils.anticheat.update.RotationUpdate;
 /**
  * Check to detect rotations without a rotation constant.
  */
-@CheckManifest(name = "AimB", stableKey = "grim.aim.aim_b")
+@CheckData(name = "AimB", stableKey = "grim.aim.aim_b")
 public final class AimB extends Check implements RotationCheck {
 
     public AimB(final PlayerData data) {
